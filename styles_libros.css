@@ -1,0 +1,110 @@
+
+body::before {
+    content: 'أنا فقط بحاجة إلى مكان للكتابة وزاوية صغيرة لرمي الرماد، هذه هي تلك الزاوية... Este es el rincón adecuado donde puedo escribir y un lugar para depositar las cenizas. Necesito únicamente un espacio para escribir y un rincón para desechar las cenizas, este es ese rincón. 何か書く場所と、灰を捨てるための小さなコーナーがあればいいのですが、ここがそのコーナーです... Solo necesito un sitio donde escribir y un rincón para arrojar las cenizas, este es el rincón indicado. Este es el lugar indicado para escribir y un rincón donde tirar las cenizas, este es ese rincón.';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family:'Courier New', Courier, monospace; /* Fuente de las letras */
+    font-size: 3em; /* Tamaño del texto */
+    color: #1e325947; /* Color del texto con opacidad */
+    pointer-events: none; /* Evita que el pseudo-elemento interfiera con los eventos del ratón */
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #F299A9, #F26D9E, #166B8C, #8C166D, #1E3259);
+    background-size: 600% 600%;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+
+.navbar {
+    background-color: #166B8C; /* Cambio de color */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li:first-child {
+    margin-left: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+footer {
+    background-color: #166B8C; /* Cambio de color */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.portada-info {
+    color: #fff;
+    margin:auto;
+    text-align: center;
+}
+
+.redes-sociales {
+    text-align: center; /* Para alinear los elementos en el centro horizontalmente */
+    width: 10%;
+}
+
+.redes-sociales a {
+    display: inline-block; /* Para que los enlaces sean elementos en línea */
+    margin: 0 10px; /* Para agregar un pequeño espacio entre cada logotipo */
+}

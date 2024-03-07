@@ -1,0 +1,189 @@
+body::before {
+    content: 'أنا فقط بحاجة إلى مكان للكتابة وزاوية صغيرة لرمي الرماد، هذه هي تلك الزاوية... Este es el rincón adecuado donde puedo escribir y un lugar para depositar las cenizas. Necesito únicamente un espacio para escribir y un rincón para desechar las cenizas, este es ese rincón. 何か書く場所と、灰を捨てるための小さなコーナーがあればいいのですが、ここがそのコーナーです... Solo necesito un sitio donde escribir y un rincón para arrojar las cenizas, este es el rincón indicado. Este es el lugar indicado para escribir y un rincón donde tirar las cenizas, este es ese rincón.';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family:'Courier New', Courier, monospace; /* Fuente de las letras */
+    font-size: 3em; /* Tamaño del texto */
+    color: #1e325947; /* Color del texto con opacidad */
+    pointer-events: none; /* Evita que el pseudo-elemento interfiera con los eventos del ratón */
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #F299A9, #F26D9E, #166B8C, #8C166D, #1E3259);
+    background-size: 600% 600%;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+    
+}
+
+
+
+.navbar {
+    background-color: #166B8C; /* Cambio de color */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li:first-child {
+    margin-left: 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.portada {
+    padding: 50px 0;
+    color: #fff;
+    margin: 0px;
+    
+}
+
+.section-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.slider {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    box-shadow: #1E3259;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilos para las tarjetas */
+.tarjeta {
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    margin: 50px;
+    padding: 20px; /* Agregando margen interior */
+    background: linear-gradient(166deg, #dd89a8e1, #166b8cd2); /* Degradado */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Añadido para posicionar el contenido de la tarjeta */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    word-break: break-word;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px #042b3a;
+}
+
+/* Estilos para el título dentro de las tarjetas */
+.tarjeta h2 {
+    margin: 0 auto; /* Elimina el margen superior e inferior y centra horizontalmente */
+    font-size: 2em; /* Tamaño grande de fuente */
+    color: #fff;
+    text-align: center;
+    overflow: hidden; /* Evita que el contenido se desborde */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+    position: absolute; /* Añadido para posicionar el título */
+    top: 50%; /* Ajuste de posición vertical */
+    left: 50%; /* Ajuste de posición horizontal */
+    transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+}
+
+.boton-ver-mas {
+    display: block;
+    margin: auto;
+    padding: 8px 16px;
+    background-color: #BF4C0A;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    position: absolute; /* Añadido para posicionar el botón */
+    bottom: 20px; /* Ajuste de posición vertical */
+    left: 50%; /* Ajuste de posición horizontal */
+    transform: translateX(-50%); /* Centra horizontalmente */
+}
+
+.boton-ver-mas:hover {
+    background-color: #F2A766;
+}
+
+footer {
+    background-color: #166B8C; /* Cambio de color */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+    
+
+
+.container_img_portada_libro {
+    width: 20%;
+    height: 20%;
+}
+.redes-sociales {
+    text-align: center; /* Para alinear los elementos en el centro horizontalmente */
+}
+
+.redes-sociales a {
+    display: inline-block; /* Para que los enlaces sean elementos en línea */
+    margin: 0 10px; /* Para agregar un pequeño espacio entre cada logotipo */
+}

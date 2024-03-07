@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Color de fondo general */
+    color: #333; /* Color de texto principal */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+
+
+.portada {
+    background-color: #e3f3f8; /* Color de fondo de la sección de portada */
+    color: #121213; /* Color de texto de la sección de portada */
+    padding: 100px 0;
+}
+
+.boton {
+    display: inline-blockce;
+    padding: 10px 20px;
+    background-color: #BF4C0A;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    
+    
+    
+}
+
+
+.boton:hover {
+    background-color: #F2A766;
+}
+
+.escritos {
+    padding: 50px 0;
+}
+
+.contenedor-escritos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.escrito {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.escrito h2 {
+    font-size: 1.5rem;
+    color: #c2ebfb;
+    margin-bottom: 10px;
+}
+
+.escrito p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos para el canvas de fondo */
+#fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}

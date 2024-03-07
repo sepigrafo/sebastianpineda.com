@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastián Pineda Giraldo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para dispositivos móviles */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .portada-info, .slider {
+                width: 100%;
+            }
+            .container_img_portada img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        /* Estilos para escritorio */
+        @media screen and (min-width: 769px) {
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+            .portada-info, .slider {
+                width: 48%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Sebastián Pineda Giraldo</a></h1>
+            <ul class="nav-links">
+                <li><a href="libros_index.html">Libros</a></li>
+                <li><a href="servicios_index.html">Servicios</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="portada">
+        <div class="container">
+            <div class="portada-info">
+                <h2 class="section-title">...</h2>
+                <div class="container_img_portada"><img src="img_brain_portada.png.png" alt=""></div>
+                
+            </div>
+            <div class="slider">
+                <!-- Se generan dinámicamente las tarjetas de escritos con JavaScript -->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text-footer">
+            <p>Copyright 2024 - Creado por Sebastián Pineda Giraldo con 🖤</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
