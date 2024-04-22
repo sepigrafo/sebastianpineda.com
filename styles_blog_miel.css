@@ -1,0 +1,65 @@
+body {
+    background-color: #FFF8DC; /* Color de fondo suave como la miel clara */
+    color: #333; /* Color de texto oscuro para contraste */
+    font-family: 'Georgia', serif; /* Fuente legible y elegante */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    background-image: url('imagenes/fondo-miel-abejas.jpg'); /* Imagen de fondo sutil */
+    background-size: cover; /* Asegura que la imagen cubra toda la página */
+    background-attachment: fixed; /* El fondo no se mueve al hacer scroll */
+    background-position: center; /* Centra la imagen en la página */
+}
+
+.portada h1, .portada h3 {
+    color: #775A00; /* Marrón oscuro inspirado en la miel más oscura para títulos */
+}
+
+.portada p {
+    margin: 10px 0; /* Añade espacio vertical entre párrafos */
+}
+
+a, .boton {
+    color: #FFF; /* Color de texto blanco para mayor contraste */
+    background-color: #DAA520; /* Color de fondo dorado, evocando la miel */
+    padding: 12px 24px; /* Aumenta el relleno para un botón más grande y fácil de clickear */
+    font-size: 16px; /* Tamaño de fuente adecuado para legibilidad */
+    border: none; /* No borde para un look más limpio */
+    border-radius: 24px; /* Bordes redondeados para un estilo moderno */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil para un efecto 3D */
+    text-decoration: none; /* Asegura que no haya subrayado */
+    margin-bottom: 50px;
+}
+
+.boton:hover {
+    background-color: #B8860B; /* Oscurece el botón al pasar el cursor para un feedback visual */
+    transform: translateY(-2px); /* Eleva ligeramente el botón al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Aumenta la sombra para un efecto más prominente */
+}
+
+.boton:active {
+    transform: translateY(1px); /* Presiona el botón hacia abajo al hacer clic */
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3); /* Sombra más pequeña para efecto de presión */
+}
+
+
+a:hover, .boton:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor para indicar interactividad */
+}
+
+.contenedor-fondo-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0; /* Añade un margen vertical para separar del contenido */
+}
+
+.contenedor-fondo-base img {
+    width: 48%; /* Ancho de las imágenes, ajustable según necesidades */
+    height: auto; /* Mantiene la relación de aspecto de las imágenes */
+}
+
+.contenedor-fondo-base {
+    height: 300px;
+    width: 300px;
+}
